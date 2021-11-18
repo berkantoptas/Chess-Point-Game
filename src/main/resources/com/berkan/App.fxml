@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorPane_App" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.berkan.AppController">
+   <children>
+      <GridPane fx:id="gridPane" alignment="CENTER" hgap="2.0" layoutX="80.0" layoutY="28.0" prefHeight="640.0" prefWidth="640.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="buttonSelectInputFile_App" layoutX="80.0" layoutY="706.0" mnemonicParsing="false" onAction="#actionSelectInputFile" prefHeight="72.0" prefWidth="219.0" text="Select Input File">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelResult_App" layoutX="312.0" layoutY="706.0" prefHeight="72.0" prefWidth="454.0">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
